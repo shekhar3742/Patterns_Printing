@@ -142,8 +142,64 @@ void pattern11(int N){
 }
 
 void pattern12(int N){
-	
+	for(int i=1 ; i<=N; i++){
+		for(int j=1; j<=i; j++){
+			cout<<j;
+		}
+		for(int j=1; j<=(2*N-2*i); j++){
+			cout<<" ";
+		}
+		for(int j=i; j>=1; j--){
+			cout<<j;
+		}
+		cout<<endl;
+	}
 }
+
+void pattern13(int N){
+		int count = 1;
+	for(int i=1; i<=N; i++){
+		for(int j=1 ; j<=i; j++){
+			cout<<count<<" ";
+			count++;
+		}
+		cout<<endl;
+	}
+}
+
+void pattern14(int N){
+	for(int i=1; i<=N; i++){
+		char ch = 'A';
+		for(int j=1; j<=i; j++){
+			cout<<ch<<" ";
+			ch++;
+		}
+		cout<<endl;
+	}
+}
+
+void pattern15(int N){
+	for(int i=1; i<=N; i++){
+		char ch='A';
+		for(int j=1; j<=(N-i+1); j++){
+			cout<<ch<<" ";
+			ch++;
+		}
+		cout<<endl;
+	}
+}
+
+void pattern16(int N){
+	char ch='A';
+	for(int i=1; i<=N; i++){
+		for(int j=1; j<=i; j++){
+			cout<<ch<<" ";
+		}
+		ch++;
+		cout<<endl;
+	}
+}
+
 
 
 
@@ -164,6 +220,12 @@ int main(){
 //	pattern8(N);
 //	pattern9(N);
 //	pattern10(N);
-	pattern11(N);
+//	pattern11(N);
+//	pattern12(N);
+//	pattern13(N);
+//  pattern14(N);
+//	pattern15(N);
+//	pattern16(N);
+	
 	return 0 ;
 }
