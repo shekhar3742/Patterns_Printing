@@ -219,14 +219,47 @@ void pattern17(int N){
 	}
 }
 
+void pattern18(int N){	
+	for(int i=0; i<N; i++){
+		for(char ch='E'-i; ch<='E'; ch++){
+			cout<<ch;
+		}
+		cout<<endl;
+	}
+}
 
-
-
+void pattern19(int N){
+	for(int i=1; i<=N; i++){
+		for(int j=1; j<=(N-i+1); j++){
+			cout<<"*";
+		}
+		for(int j=1; j<=(2*i-2); j++){
+			cout<< " ";
+		}
+			for(int j=1; j<=(N-i+1); j++){
+			cout<<"*";
+		}
+		cout<<endl;
+	}
+	for(int i=1; i<=N; i++){
+		for(int j=1; j<=i; j++){
+			cout<<"*";
+		}
+		for(int j=1; j<=(2*N-2*i); j++){
+			cout<< " ";
+		}
+			for(int j=1; j<=(i); j++){
+			cout<<"*";
+		}
+		cout<<endl;
+	}
+	
+}
 
 
 
 int main(){
-	int N = 5; 
+	int N = 3; 
 //	pattern1(N);
 //	pattern2(N);
 //	pattern3(N);
@@ -243,7 +276,8 @@ int main(){
 //  pattern14(N);
 //	pattern15(N);
 //	pattern16(N);
-	pattern17(N);
-	
+//	pattern17(N);
+//	pattern18(N);
+	pattern19(N);
 	return 0 ;
 }
