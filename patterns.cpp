@@ -200,7 +200,24 @@ void pattern16(int N){
 	}
 }
 
-
+void pattern17(int N){
+	for(int i=1; i<=N; i++){
+		for(int j=1; j<=(N-i); j++){
+			cout<< " ";
+		}
+		char ch ='A';
+		int breakpoint = (2*i-1)/2;
+		for(int j=1; j<=(2*i-1); j++){
+			cout<< ch;
+			if(j<=breakpoint) ch++;
+			else ch--;
+		}
+		for(int j=1; j<=(N-i); j++){
+			cout<< " ";
+		}
+		cout<<endl;
+	}
+}
 
 
 
@@ -209,7 +226,7 @@ void pattern16(int N){
 
 
 int main(){
-	int N = 5 ; 
+	int N = 5; 
 //	pattern1(N);
 //	pattern2(N);
 //	pattern3(N);
@@ -226,6 +243,7 @@ int main(){
 //  pattern14(N);
 //	pattern15(N);
 //	pattern16(N);
+	pattern17(N);
 	
 	return 0 ;
 }
